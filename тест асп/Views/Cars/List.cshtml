@@ -1,0 +1,22 @@
+﻿
+@using тест_асп.ViewModel
+@using тест_асп.Data.models
+@model CarsListViewModel
+@{
+    Layout = "_Layout";
+
+}
+
+<!DOCTYPE html>
+
+
+    <h2>все автомобили</h2>
+    <h2>@Model.currCategory</h2>
+    <div class="row mt-5 mb-2">
+        @{
+            foreach (Car car in Model.GetAllCars)
+            {
+               @Html.Partial("AllCars",car)
+            }
+        }
+    </div>

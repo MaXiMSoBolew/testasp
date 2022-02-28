@@ -1,0 +1,19 @@
+﻿
+@{
+    Layout = "_Layout";
+}
+@using тест_асп.ViewModel
+@model HomeViewModel
+@using тест_асп.ViewModel
+@using тест_асп.Data.models
+
+<h2>best avto</h2>
+
+<div class="row mt-5 mb-2">
+    @{
+        foreach (Car car in Model.favcars)
+        {
+            @Html.Partial("AllCars", car)
+        }
+    }
+</div>

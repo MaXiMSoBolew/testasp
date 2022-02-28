@@ -1,0 +1,9 @@
+﻿@model тест_асп.Data.models.Car
+
+<div class="col-lg-4">
+    <img class="img-thumbnail" src="@Model.img" alt="@Model." />
+    <h2>model  @Model.name</h2>
+    <p> Price  @Model.price.ToString("C") </p>
+    <p>@Model.shortDesc </p>
+    <p><a class="btn btn-warning" href="#"> подробнее</a>  </p>
+</div>
